@@ -1,0 +1,81 @@
+Features
+
+
+
+
+
+Packet Monitoring: Captures and analyzes network packets using Scapy, displaying details such as source/destination IPs, ports, and protocols.
+
+
+
+Firewall Rule Management: Allows blocking/unblocking of IPs and ports with persistent storage in a SQLite database.
+
+
+
+Cross-Platform Support: Manages firewall rules on Windows (using netsh) and Linux (using iptables).
+
+
+
+Web Interface: Provides an intuitive Streamlit-based UI for managing rules, viewing packet data, and visualizing traffic statistics.
+
+
+
+Logging: Records actions and errors to a log file for auditing and troubleshooting.
+
+
+
+Authentication: Includes basic password protection for the web interface (configurable for enhanced security).
+
+
+
+Data Export: Supports exporting packet data as CSV for further analysis.
+
+
+
+Visualization: Displays packet status by source IP using interactive Plotly charts.
+
+Requirements
+
+
+
+
+
+Operating System: Windows (10/11, Server 2016+) or Linux (Ubuntu, CentOS, etc.)
+
+
+
+Python: Version 3.8 or higher
+
+
+
+Dependencies:
+
+
+
+
+
+scapy
+
+
+
+streamlit
+
+
+
+pandas
+
+
+
+plotly
+
+
+
+sqlite3 (included with Python)
+
+
+
+Privileges: Administrative/root privileges are required for packet sniffing and firewall rule management.
+
+
+
+Network Interface: A valid network interface (e.g., eth0 on Linux, Wi-Fi on Windows) for packet capture.
